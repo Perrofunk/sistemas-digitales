@@ -1,41 +1,47 @@
+:root{
+    --primary-color: #202124;
+    --secondary-color:white;
+    --text-color: #bdc1c6;
+}
 body{
-    background-color:black;
-    color:gold;
+    background-color:var(--primary-color);
+    color:var(--text-color);
     font-family:Arial, Helvetica, sans-serif;
 }
 header{
     display: flex;
     align-items: center;
     flex-direction: column;
+    color:var(--secondary-color);
+    font-weight: bolder;
 }   header>h2{
-        margin-top: 5px;margin-bottom: 5px;
+        margin-top: 5px;margin-bottom: 15px;
     }
 
-#menu-p{
+.menu-p{
     text-align: center;
+    
 }
 main{
     display: flex;
     flex-direction: column;
     margin:30px;
 }
-nav{
+
+nav>ol{
+    padding: 0;
     display: grid;
-    margin-left:10%;
-    margin-right:10%;
-    justify-items: start;
-    
-}
-nav>ul{
-    display: flex;  
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    max-height: 150px;
+    gap: px;
+    list-style-position: inside;
+    grid-template-columns: 20% 20% 20% 20% 20%;
   }
-li{
+ul>li{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#proyectos-list{
     border: solid 1px white;
+    list-style: none;
 
 }
 #form-container{

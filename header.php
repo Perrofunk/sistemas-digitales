@@ -10,13 +10,14 @@
 <body>
     <?php 
         if($paginaActual !== "Menu Principal"){
-            echo '<p style="margin:0px;padding:0px;"><a href="/sistemas-digitales/index.php">Volver al menú</a></p>';
+            echo '<p style="margin:0px;padding:0px;"><a href="/sistemas-digitales">Volver al menú</a></p>';
         }
     ?>
 
     <header>
-        <h1>SISTEMAS DIGITALES</h1>
+        <h1>MODELOS Y SISTEMAS</h1>
         <?php 
         echo "<h2>".$paginaActual."</h2>";
         ?>
     </header>
+    <hr>
